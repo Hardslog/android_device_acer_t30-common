@@ -22,17 +22,17 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 
 # Don't store dalvik on /cache, it gets annoying when /cache is wiped
 # by the bootloader everytime we boot into recovery
-PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.dexopt-data-only=1 \
-    dalvik.vm.heapstartsize=8m \
-    dalvik.vm.heapgrowthlimit=96m \
-    dalvik.vm.heapsize=384m \
-    dalvik.vm.heaptargetutilization=0.75 \
-    dalvik.vm.heapminfree=2m \
-    dalvik.vm.heapmaxfree=8m
+# PRODUCT_PROPERTY_OVERRIDES += \
+#    dalvik.vm.dexopt-data-only=1 \
+#    dalvik.vm.heapstartsize=8m \
+#    dalvik.vm.heapgrowthlimit=96m \
+#    dalvik.vm.heapsize=384m \
+#    dalvik.vm.heaptargetutilization=0.75 \
+#    dalvik.vm.heapminfree=2m \
+#    dalvik.vm.heapmaxfree=8m
 
 # we have enough storage space to hold precise GC data
-PRODUCT_TAGS += dalvik.gc.type-precise
+# PRODUCT_TAGS += dalvik.gc.type-precise
 
 # We copy fstab twice, fstab.acer for init, fstab.$(PRODUCT_BOOTLOADER) for vold
 PRODUCT_COPY_FILES += \
@@ -78,7 +78,7 @@ PRODUCT_PACKAGES += \
     hcitool \
     com.android.future.usb.accessory
 
-###    bttest \
+#    bttest \
 
 # Live wallpaper packages
 PRODUCT_PACKAGES += \
@@ -104,7 +104,6 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_ffmpeg.xml:system/etc/media_codecs_ffmpeg.xml \
     device/acer/t30-common/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml \
     device/acer/t30-common/prebuilt/etc/media_codecs.xml:system/etc/media_codecs.xml
 
