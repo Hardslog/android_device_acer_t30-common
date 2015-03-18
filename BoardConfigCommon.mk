@@ -65,6 +65,9 @@ BOARD_NO_APSME_ATTR := true
 TARGET_KERNEL_SOURCE := kernel/acer/t30
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.7
 
+# Avoid the generation of ldrcc instructions
+NEED_WORKAROUND_CORTEX_A9_745320 := true
+
 BOARD_USES_GENERIC_AUDIO := false
 BOARD_USES_ALSA_AUDIO := false
 BOARD_USES_TINY_AUDIO_HW := true

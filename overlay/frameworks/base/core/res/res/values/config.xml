@@ -117,16 +117,9 @@
 
          Must be overridden in platform specific overlays -->
      <integer-array name="config_autoBrightnessLevels">
-       <item>10</item>
-       <item>100</item>
-       <item>250</item>
-       <item>450</item>
-       <item>900</item>
-       <item>1800</item>
-       <item>2400</item>
-       <item>3000</item>
-       <item>3600</item>
-       <item>4193</item>
+         <item>20</item>
+         <item>150</item>
+         <item>1500</item>
      </integer-array>
 
 
@@ -135,17 +128,10 @@
          than the size of the config_autoBrightnessLevels array.
          This must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLcdBacklightValues">
-      <item>1</item>
-      <item>5</item>
-      <item>15</item>
-      <item>25</item>
-      <item>35</item>
-      <item>60</item>
-      <item>100</item>
-      <item>130</item>
-      <item>170</item>
-      <item>210</item>
-      <item>255</item>
+        <item>30</item>
+        <item>51</item>
+        <item>146</item>
+        <item>255</item>
     </integer-array>
 
     <!-- Array of output values for button backlight corresponding to the LUX values
@@ -224,7 +210,7 @@
     <bool name="config_enableMultiUserUI">true</bool>
 
     <!-- reference volume index for music stream to limit headphone volume and display warning -->
-    <integer name="config_safe_media_volume_index">10</integer>
+    <integer name="config_safe_media_volume_index">6</integer>
 
     <!-- Device has a h/w rotation lock switch -->
     <bool name="config_hasRotationLockSwitch">true</bool>
@@ -238,15 +224,9 @@
              8 - Assistant (search)
             16 - App switch
             32 - Camera
-	    64 - Volume rocker
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
-    <integer name="config_deviceHardwareKeys">64</integer>
-
-    <!-- Maximum wallpaper width for devices with very high-res screen (1920x1200)
-         the wallpaper width suggestion by the launcher may be too large for
-         the GPU to handle. -->
-    <!-- <integer name="config_wallpaperMaxWidth">2048</integer> -->
+    <integer name="config_deviceHardwareKeys">0</integer>
 
     <!-- Disable lockscreen translucent decor by default -->
     <bool name="config_enableLockScreenTranslucentDecor">true</bool>

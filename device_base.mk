@@ -18,7 +18,7 @@ PRODUCT_PROPERTY_OVERRIDES := \
 
 # Set default USB interface
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-	persist.sys.usb.config=mtp
+	persist.sys.usb.config=mtp,adb
 
 # Don't store dalvik on /cache, it gets annoying when /cache is wiped
 # by the bootloader everytime we boot into recovery
@@ -32,7 +32,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 #    dalvik.vm.heapmaxfree=8m
 
 # we have enough storage space to hold precise GC data
-# PRODUCT_TAGS += dalvik.gc.type-precise
+PRODUCT_TAGS += dalvik.gc.type-precise
 
 # We copy fstab twice, fstab.acer for init, fstab.$(PRODUCT_BOOTLOADER) for vold
 PRODUCT_COPY_FILES += \
