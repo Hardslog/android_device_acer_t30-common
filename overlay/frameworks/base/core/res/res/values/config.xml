@@ -286,4 +286,9 @@
     <!-- TODO: There's a bug causing the ColorFade animation not to work with our GPU -->
     <bool name="config_animateScreenLights">true</bool>
 
+<!-- Maximum wallpaper width for devices with very high-res screen (1920x1200)
+          the wallpaper width suggestion by the launcher may be too large for
+          the GPU to handle. -->
+    <integer name="config_wallpaperMaxWidth">2048</integer>
+
 </resources>
